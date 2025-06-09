@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mycloudapp-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mycloudapp
+  template:
+    metadata:
+      labels:
+        app: mycloudapp
+    spec:
+      containers:
+      - name: mycloudapp
+        image: avelimos/mycloudapp:latest
+        ports:
+        - containerPort: 5000

@@ -1,0 +1,8 @@
+manifest_version = "1"
+id = "http-c"
+description = "HTTP request handler using C and the Zig toolchain"
+tags = ["http", "c"]
+
+[parameters]
+project-description = { type = "string",  prompt = "Description", default = "" }
+http-path = { type = "string", prompt = "HTTP path", default = "/...", pattern = "^/\\S*$" }
