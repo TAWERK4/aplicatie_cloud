@@ -74,3 +74,18 @@ nano deployment.yaml
 kubectl apply -f deployment.yaml
 kubectl get pods
 nano cloudbuild.yaml
+git init
+git add .
+git commit -m "Initial commit"
+git remote add origin https://github.com/TAWERK4/aplicatie_cloud.git
+git push -u origin main
+git config --global user.name TAWERK4
+git config --global user.email anghelcev.elisey@gmail.com
+git branch -m master main
+git add .
+git commit -m "Initial commit"
+git remote add origin https://github.com/TAWERK4/aplicatie_cloud.git
+git push -u origin main
+git add .
+git commit -m "Update app"
+git push origin main
